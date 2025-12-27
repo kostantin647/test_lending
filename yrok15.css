@@ -1,25 +1,4 @@
-/*body {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: Arial;
-	color: white;
-	min-height: 200vh;
-	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(bgp4.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	/*поремонтувати затемнення*/
-	/*спитати чат гпт*/
-	/*слава чату гпт*/
-/*}
-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 20px 40px;
-}
-*/
+
 	body {
 	margin: 0;
 	padding: 0;
@@ -93,3 +72,4 @@ form{
 		
 	}
 }
+
