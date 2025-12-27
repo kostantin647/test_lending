@@ -1,0 +1,95 @@
+/*body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial;
+	color: white;
+	min-height: 200vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(bgp4.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	/*поремонтувати затемнення*/
+	/*спитати чат гпт*/
+	/*слава чату гпт*/
+/*}
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 40px;
+}
+*/
+	body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+	color: white;
+	min-height: 100vh;
+
+	/* Фон */
+	background: url("bgp4.jpg") center / cover no-repeat;
+	position: relative;
+}
+
+body::before {
+	/*::before — це псевдоелемент, який дозволяє створити віртуальний елемент перед вмістом елемента, без HTML.*/
+	content: "";
+	/*content: ""; Без цього ::before не існує*/
+	position: fixed;
+	inset: 0;
+	/*Це короткий запис для: top: 0; right: 0; bottom: 0; left: 0;*/
+	background: rgba(0, 0, 0, 0.75);
+	z-index: -1;
+	/*Кладе затемнення під контент, але над фоном
+    Якщо поставити z-index: 1 — затемнить і текст*/
+    	/*я не знаю як воно працює, але воно працює*/
+
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.main_content input{
+	margin: 5px;
+	padding: 10px;
+	background: linear-gradient(rgba(0, 0, 0, 0.7));
+	border: 1px solid white;
+	border-radius: 8px;
+}
+button{
+	background: #ff0000;
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 8px;
+	border: 1px solid white;
+	width: 150px;
+	margin-left: 75%;
+	position: revert;
+}
+button:hover {
+	background: #d40000;
+	cursor: pointer;
+
+}
+h1{
+	color: red;
+}
+main{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+form{
+	display: flex;
+	flex-direction: column;
+}
+@media(max-width: 599px){
+	body{
+		background-position: 50% center;
+		
+	}
+}
